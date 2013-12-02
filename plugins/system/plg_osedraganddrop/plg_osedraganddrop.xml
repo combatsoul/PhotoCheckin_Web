@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>System - OSE Drag n Drop Admin</name>
+	<author>Open Source Excellence</author>
+	<creationDate>28-May-2012</creationDate>
+	<copyright>Copyright (C) 2009 Open Source Excellence. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authoremail>info@opensource-excellence.co.uk</authoremail>
+    <authorurl>http://www.opensource-excellence.co.uk</authorurl>
+	<version>2.5</version>
+	<description>Adds a functionality to let you re-order your table items by dragging and dropping rows and pressing the save button. Now works for Joomla 2.5!! Remember to publish the plugin in your plugins administration area!</description>
+	<files>
+		<filename plugin="plg_osedraganddrop">plg_osedraganddrop.php</filename>
+		<folder>plg_osedraganddrop</folder>
+	</files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+    	  <field name="table_class" type="text" default="adminlist" label="Table Class" description="Enter the table class you would like to apply the drag n drop features. This allows for specific table enabling. Default: adminlist" />
+    	  <field name="include_components" type="text" size="50" default="" label="Include Component List" description="Enter the component names (comma seperated) where you would like to enable the DnD Plugin. For example: com_kupo,com_comprofiler,com_virtuemart," />
+    	  <field name="oddrow" type="text" default="#0B55C4" label="Odd Row Text Color" description="Enter the color in pixels of your odd row table text." />
+    	  <field name="evenrow" type="text" default="#333333" label="Even Row Text Color" description="Enter the color in pixels of your even row table text." />
+        <field name="use_jquery" type="list" default="1" label="Use Included jQuery" description="Choose whether to use the included jQuery. Disable if your site admin is allready using jQuery. Default is Yes as most Joomla Admin areas do not use jQuery.">
+          	<option value="1">Yes</option>
+          	<option value="0">No</option>
+        </field>
+        <field name="show_arrows" type="list" default="1" label="Show Reorder Arrows" description="Choose whether to show or hide the reorder arrows. Arrows are not required if using this plugin, but you might want them anyway.">
+          	<option value="1">Yes</option>
+          	<option value="0">No</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>
